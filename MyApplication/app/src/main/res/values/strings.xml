@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pocket Tracer</string>
+    <string name="title_activity_property_screen">PropertyScreen</string>
+    <string name="settings_name">Settings</string>
+    <string name="property_name">My Property</string>
+    <string name="home_name">Dashboard</string>
+    <string name="logout_name">Log Out</string>
+    <string name="Brand">Brand</string>
+    <string name="Category">Category</string>
+    <string name="Price">Price</string>
+    <string name="Date">Date</string>
+    <string name="PurchasedDate">Purchased Date</string>
+    <string name="saveButton">Save</string>
+    <string name="cancelButton">Cancel</string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".HomeScreen">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar">
+    </include>
+
+
+    <ImageView
+        android:id="@+id/iv_homeBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="222dp"
+        android:layout_below="@id/app_bar"
+        app:srcCompat="@drawable/image_property"
+        android:tint="#6F000000" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
+        android:layout_below="@id/app_bar"
+        android:text="Welcome Admin"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textSubView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
+        android:layout_below="@id/textView"
+        android:text="Dashboard"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <ImageButton
+        android:id="@+id/imageInventoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_homeBackground"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edit_back"
+        android:onClick="onInventoryClick"
+        app:srcCompat="@drawable/ic_inventory_home" />
+
+
+    <ImageButton
+        android:id="@+id/imageCalendarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/iv_homeBackground"
+        app:srcCompat="@drawable/ic_calendar_home"
+        android:onClick="onCalendarClick"
+        android:layout_toLeftOf="@id/imageInventoryButton"
+        android:background="@drawable/edit_back" />
+
+    <ImageButton
+        android:id="@+id/imageInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/iv_homeBackground"
+        android:layout_toRightOf="@id/imageInventoryButton"
+        android:background="@drawable/edit_back"
+        android:onClick="onPropertyDetailsTabClick"
+        app:srcCompat="@drawable/ic_info_home" />
+
+    <TextView
+        android:id="@+id/tv_price_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1111.00"
+        android:textSize="35sp"
+        android:layout_below="@id/tv_titleOf_price_number"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_titleOf_price_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total of Inventory"
+        android:textSize="25sp"
+        android:layout_below="@id/imageInventoryButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"/>
+
+</RelativeLayout>

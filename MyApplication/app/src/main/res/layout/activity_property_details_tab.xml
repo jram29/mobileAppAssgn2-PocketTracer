@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PropertyDetailsTab"
+    android:background="#009688">
+
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </include>
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        app:srcCompat="@drawable/image_property_details"
+        android:layout_below="@id/app_bar"
+        android:tint="#6F000000"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
+        android:text="Property information"
+        android:layout_below="@id/app_bar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="526dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/textPropertyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Property Name" />
+
+            <EditText
+                android:id="@+id/txtEditPropertyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textPropertyName"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="ex. John's Property"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEditPropertyName"
+                android:layout_marginTop="10dp"
+                android:text="Full Address" />
+
+            <EditText
+                android:id="@+id/txtEditAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAddress"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="ex. 32 Kent terrace, Wellington"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textBedroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEditAddress"
+                android:layout_marginTop="10dp"
+                android:text="Bedroom" />
+
+            <EditText
+                android:id="@+id/txtEditBedroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textBedroom"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="ex. 3"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textBathroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEditBedroom"
+                android:layout_marginTop="10dp"
+                android:text="Bathroom" />
+
+            <EditText
+                android:id="@+id/txtEditBathroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textBathroom"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="ex. 2"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textGarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEditBathroom"
+                android:layout_marginTop="10dp"
+                android:text="Garage" />
+
+            <EditText
+                android:id="@+id/txtEditGarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textGarage"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="ex. Single or 1"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textBackYardSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEditGarage"
+                android:layout_marginTop="10dp"
+                android:text="Back Yard (sq.)" />
+
+            <EditText
+                android:id="@+id/txtEditB_YardSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textBackYardSize"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Back yard size in sq."
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textFrontYardSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEditB_YardSize"
+                android:layout_marginTop="10dp"
+                android:text="Front Yard (sq.)" />
+
+            <EditText
+                android:id="@+id/txtEditF_YardSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textFrontYardSize"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Front yard size in sq."
+                android:textColor="#fff"/>
+
+
+            <RelativeLayout
+
+                android:id="@+id/btnRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtEditF_YardSize"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp">
+
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:background="@drawable/btn_back"
+                    android:text="@string/saveButton"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancelButton"
+                    android:layout_toRightOf="@id/btnSave"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btn_back"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
